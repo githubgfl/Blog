@@ -16,7 +16,7 @@ class Labels extends React.Component{
     getLabels(){
         axios.get("/json/labels.json").then(
             res =>{
-                console.log(res.data.labels)
+
                 this.setState({
                     labels:res.data.labels
                 })

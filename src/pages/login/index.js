@@ -9,7 +9,7 @@ class Login extends React.Component {
     }
     render = () => {
         return <h2>
-            <p>这个时登陆界面</p>
+            <p>这个是登陆界面</p>
             <button onClick={this.login}>点击登陆</button>
             
         </h2>

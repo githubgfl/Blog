@@ -24,7 +24,9 @@ class HostInfo extends React.Component {
                         我很抱歉 <br/>
                     </div>
                     <div class="contacts">
-                        {data.contacts.map( item => <a className ={item.name + " contact"} href={item.url?item.url:"javascript:void(0);"} target={item.url?"blank":"_self"} rel="nofollow">
+                        {data.contacts.map( item => 
+                        
+                        <a className ={item.name + " contact"} href={item.url?item.url:"javascript:void(0);"} target={item.url?"blank":"_self"} rel="nofollow">
                             {item.qcode && <div style={{backgroundImage:`url(${this.quickCodeMap[item.name]})`}}></div>}
                         </a>)}
                     </div>
